@@ -1,0 +1,22 @@
+{
+  "name": "medium",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "@prisma/extension-accelerate": "^2.0.2",
+    "bcryptjs": "^3.0.2",
+    "hono": "^4.9.7",
+    "jose": "^6.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "prisma": "^6.16.2",
+    "wrangler": "^4.4.0"
+  }
+}
