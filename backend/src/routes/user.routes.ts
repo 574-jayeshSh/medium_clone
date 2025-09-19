@@ -47,7 +47,7 @@ userRouter.post('/signin', async (c: Context) => {
 })
 
 // Login route
-userRouter.post('/login', async (c: Context) => {
+userRouter.post('/signup', async (c: Context) => {
   try {
     const body = await c.req.json<{ email: string; password: string }>()
 
